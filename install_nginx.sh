@@ -17,4 +17,4 @@ cd nginx-${nginxVersion} || exit
 
 ./configure --prefix=/usr/local/nginx --with-stream --with-http_stub_status_module --with-http_ssl_module --with-http_v2_module --with-http_gzip_static_module --add-module=../nginx-module-vts-${vtsVersion} && make -j ${cpu_core_count} && make install && /usr/local/nginx/sbin/nginx
 
-rm -rf /data/*
+cd ~ && rm -rf /data/*
